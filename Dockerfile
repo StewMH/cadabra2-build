@@ -2,7 +2,7 @@ FROM ubuntu:18.10
 USER root
 RUN apt update 
 RUN 
-RUN DEBIAN_FRONTEND=noninteractive apt install -y sudo git cmake python3-dev 
+RUN DEBIAN_FRONTEND=noninteractive apt install -y sudo git cmake python3-dev \
       g++ libpcre3 libpcre3-dev libgmp3-dev \
       libgtkmm-3.0-dev libboost-all-dev libgmp-dev libsqlite3-dev uuid-dev  \
       texlive texlive-latex-extra dvipng \
